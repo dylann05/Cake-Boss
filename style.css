@@ -1,0 +1,214 @@
+:root{
+    --primario-color: #F2DBC2;
+    --secundario-color: #c99c6d;
+    --terciario-color: #996A52;
+    --cuarto-color: #473829;
+    --negro: #212121;
+    --gris: #858585;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    width: 100dvw;
+    height: 100dvh;
+    font-size: 1em;
+    font-family: sans-serif;
+    background-color: #fff2e4;
+}
+header{
+    background: linear-gradient(170deg, var(--primario-color), var(--secundario-color), var(--terciario-color), var(--cuarto-color));
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 150px;
+    min-height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 6;
+}
+nav{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul.nav-bar{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    margin: 0 50px;
+}
+li.nav-item{
+    width: fit-content;
+    height: fit-content;
+}
+a.nav-item-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    height: 2em;
+    border-radius: 10px;
+    padding: 1.5em 1em;
+    font-size: 0.8em;
+    transition: 0.3s ease-in-out;
+}
+a.nav-item-link:hover{
+    background-color: #fff;
+    color: var(--cuarto-color);
+    bottom: 10px;
+    position: relative;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+}
+.inicio-img{
+    width: 100% !important;
+    height: 590px !important;
+}
+.inicio-texto{
+    position: absolute;
+    top: 20%;
+    color: #fff;
+    font-size: 1.2em;
+    width: 101.3%;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-wrap: balance;
+}
+.inicio-texto p{
+    width: 60%;
+    text-align: center;
+    text-wrap: balance;
+}
+h1, h2{
+    font-size: 2.5em;
+    margin: 0.3em 0;
+}
+.info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+h3, h4{
+    font-size: 2em;
+    margin: 1em 0;
+    text-align: center;
+    text-wrap: balance;
+}
+.info-item{
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 0 40px 10px var(--gris);
+    padding: 1em;
+    margin: 1.5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+h3:hover + p{
+    display: block;
+}
+
+.info-item:hover{
+    scale: 1.1;
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(to bottom, var(--terciario-color), var(--secundario-color));
+    color: #fff;
+    width: 50%;
+}
+.info p{
+    display: none;
+    width: 80%;
+    font-size: 1em;
+    text-align: center;
+    text-wrap: balance;
+    margin: 1em 0;
+}
+.int{
+    width: 50%;
+    height: fit-content;
+    padding: 3em;
+    border-radius: 30px;
+    margin: 4em 0;
+    box-shadow: 0 0 50px 10px var(--gris);
+    background: #fff;
+}
+.int ol{
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.int li{
+    padding: 0.4em 0;
+}
+.grid-title{
+    display: flex;
+    margin: 1.5em 0;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    width: 80%;
+    height: fit-content;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5%;
+}
+.grid-item{
+    padding: 1.5em;
+    color: var(--negro);
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 50px 10px var(--gris);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.4s ease-in-out;
+}
+.img-grid{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+.grid-item:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to bottom, var(--terciario-color), var(--secundario-color));
+    color: #fff;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: var(--cuarto-color);
+    color: #fff;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
